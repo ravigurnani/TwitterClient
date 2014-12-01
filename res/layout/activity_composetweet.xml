@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivComposeProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ravi_icon" />
+
+    <TextView
+        android:id="@+id/tvComposeUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/ivComposeProfilePic"
+        android:text="@string/RaviG" />
+
+    <EditText
+        android:id="@+id/etTweetBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivComposeProfilePic"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:maxLength="140"
+        android:text="@string/TweetText">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnTweetSubmit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etTweetBox"
+        android:layout_alignBottom="@+id/etTweetBox"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="@string/postTweet" 
+        android:onClick="postTweet"/>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tweet Only</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_photos">Flickr Photos</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="title_activity_timeline">Tweet Tweet</string>
+    <string name="userScreenName">User Screen Name</string>
+    <string name="tweetBody">Tweet Body</string>
+    <string name="Name">Name</string>
+    <string name="tweetLife">Tweet Life</string>
+    <string name="retweetCnt">0</string>
+    <string name="composeTweet">Compose</string>
+    <string name="TweetText">Tweet Tweet</string>
+    <string name="RaviG">Ravi Gurnani</string>
+    <string name="postTweet">Post</string>
+    
+
+</resources>
