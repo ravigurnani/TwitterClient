@@ -23,7 +23,8 @@
         android:textSize="12sp"
         android:layout_marginBottom="10dp"
         android:text="@string/tweetBody" 
-        android:autoLink="all"/>
+        android:autoLink="all"
+        android:typeface="normal"/>
 
     <TextView
         android:id="@id/tvName"
@@ -33,7 +34,14 @@
         android:layout_toRightOf="@+id/ivProfilePic"
         android:text="@string/Name"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:shadowColor="#2d0000"
+        android:shadowRadius="1.5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+            android:textColorHighlight="#7C82D2"
+    android:textColorHint="#2DC942"
+    android:textColorLink="#8DE67F"/>
 
     <TextView
         android:id="@+id/tvUserScreenName"

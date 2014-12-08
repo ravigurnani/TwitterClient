@@ -16,6 +16,6 @@
     <string name="TweetText">Tweet Tweet</string>
     <string name="RaviG">Ravi Gurnani</string>
     <string name="postTweet">Post</string>
-    
+    <string name="title_activity_profile">ProfileActivity</string>
 
 </resources>

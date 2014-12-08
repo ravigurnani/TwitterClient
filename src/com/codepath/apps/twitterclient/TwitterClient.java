@@ -9,6 +9,7 @@ import android.util.Log;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.oauth.OAuthBaseClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 /*
  * 
@@ -62,6 +63,35 @@ public class TwitterClient extends OAuthBaseClient {
 		client.post(apiUrl, params, handler);
 		
 		
+	}
+
+	public void MentionsTimelineClient(
+			AsyncHttpResponseHandler handler) {
+		// TODO Auto-generated method stub
+		String apiUrl = getApiUrl("statuses/mentions_timeline.json");
+		RequestParams params = new RequestParams();
+		//Lets fetch the lastIdx which is id of the last tweet we have
+		Tweet tweet = new Tweet();
+		long lastIdx = tweet.getLastIdx();
+		
+		//params.put("since_id","1");
+		params.put("since_id", Long.toString(lastIdx));
+		params.put("count", "25");
+		//params.put("count", "1");
+		client.get(apiUrl, null, handler);	
+		
+	}
+	
+	public void getMyInfo(AsyncHttpResponseHandler handler){
+		
+		String apiUrl = getApiUrl("account/verify_credentials.json");
+		client.get(apiUrl, null, handler);
+	}
+	
+	public void getUserTimeline(AsyncHttpResponseHandler handler){
+		
+		String apiUrl = getApiUrl("statuses/user_timeline.json");
+		client.get(apiUrl, null, handler);
 	}
 
 	// CHANGE THIS
